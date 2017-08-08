@@ -6,6 +6,6 @@
   "Parameters": {
     "user": "root",
     "password": "dev",
-    "url": "tcp(127.0.0.1:3306)/mysql?parseTime=true"
+    "url": "tcp(127.0.0.1:3306)/mytestdb2?parseTime=true"
   }
 }

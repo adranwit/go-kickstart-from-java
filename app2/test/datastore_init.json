@@ -1,13 +1,13 @@
 {
   "DatastoreConfigs": [
     {
-      "Datastore": "mytestdb",
+      "Datastore": "mytestdb2",
       "AdminDbName": "mysql",
       "ClearDatastore": true,
       "ConfigUrl": "test://test/config/store.json",
       "Descriptors": [
         {
-          "Table": "table1",
+          "Table": "site",
           "Autoincrement": true,
           "PkColumns": [
             "id"

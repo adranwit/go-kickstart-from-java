@@ -1,0 +1,21 @@
+[
+
+  {
+    "id":"<ds:seq [\"site\"]>",
+    "name": "Bcd",
+    "url": "http://xuz.com",
+    "category": "EFG"
+  },
+  {
+    "id":"<ds:seq [\"site\"]>",
+    "name": "Cde",
+    "url": "http://eee.com",
+    "category": "FGH"
+  },
+  {
+    "id":"<ds:seq [\"site\"]>",
+    "name": "AZZZZZZ",
+    "url": "bbc.com/dferewrew",
+    "category": "Travel"
+  }
+]

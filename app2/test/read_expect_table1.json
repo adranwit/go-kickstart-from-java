@@ -1,6 +1,0 @@
-[
-  { "id":"<ds:seq [\"table1\"]>", "name":"Abc", "category":"DEF","status":"yes"},
-  { "id":"<ds:seq [\"table1\"]>", "name":"Bcd", "category":"EFG"},
-  { "id":"<ds:seq [\"table1\"]>", "name":"Cde", "category":"FGH"}
-]
-]

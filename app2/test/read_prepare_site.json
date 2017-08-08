@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Abc",
+    "url": "http://abc.com",
+    "category": "DEF",
+    "status": "yes"
+  },
+  {
+    "name": "Bcd",
+    "url": "http://xuz.com",
+    "category": "EFG"
+  },
+  {
+    "name": "Cde",
+    "url": "http://eee.com",
+    "category": "FGH"
+  }
+]
