@@ -46,8 +46,9 @@ This section provides the closest golang and java type, classes mapping.
 
 
 
-### Type type 
-
+### Time type 
+ | Golang      | Java           |
+  |-------------|----------------|
  |   time.Time     | java.util.Date   | 
   
 ### Collection types    
