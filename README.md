@@ -857,10 +857,60 @@ func main() {
 
 
 
-### Web service
+## Web service
 
 
-### Database 
+  https://github.com/viant/toolbox/blob/master/service_router.go  
+  https://github.com/viant/toolbox/blob/master/service_router_test.go  
+   
+  Check app2
+
+    
+## Database 
+
+    Check app3
+
+
+### Vertica setup
+
+1. Install ODBC manager http://www.odbcmanager.net/
+2. Install Vertica driver https://my.vertica.com/client_drivers/7.1.x/vertica-odbc-7.1.2-0.mac.pkg
+3. Change  set DriverManagerEncoding=UTF-16 in /Library/Vertica/ODBC/lib/vertica.ini 
+4. Install go driver go get github.com/alexbrainman/odbc
+5. Create/modify Vertica driver details /etc/odbcinst.ini   
+
+```text
+[ODBC Drivers]
+Vertica=Installed
+UsageCount=1
+
+[Vertica]
+Description=HP Vertica ODBC Driver
+Driver=/Library/Vertica/ODBC/lib/libverticaodbc.dylib
+Setup=/Library/Vertica/ODBC/lib/libverticaodbc.dylib
+ErrorMessagesPath=/Library/Vertica/ODBC/messages/
+DriverManagerEncoding=UTF-16
+UsageCount=1
+```
+
+6. Install Vertica driver odbcinst -i -d -f /etc/odbcinst.ini   
+7. Create dcc.Config configuration 
+
+```text
+{
+  "DriverName": "odbc",
+  "Descriptor": "driver=Vertica;Database=[database];ServerName=[server];port=[port];user=[user];password=[password]",
+  "Parameters": {
+    "user": "user",
+    "password":"****",
+    "database":"dw",
+    "server":"10.55.1.181",
+    "port":"5433"
+  }
+}
+
+```
+
 
 
 
