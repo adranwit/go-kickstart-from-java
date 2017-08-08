@@ -1,14 +1,14 @@
 package app1_test
 
 import (
-	"../../go-kickstart-from-java/app1"
-	"fmt"
+	"github.com/adranwit/go-kickstart-from-java/app1"
 	"github.com/stretchr/testify/assert"
 	"github.com/viant/toolbox"
-	"log"
-	"net/http"
-	"testing"
 	"time"
+	"testing"
+	"net/http"
+	"log"
+	"fmt"
 )
 
 func StartServer(port string, t *testing.T) {
@@ -47,13 +47,19 @@ func TestServiceRouter(t *testing.T) {
 	time.Sleep(2 * time.Second)
 	var result = make([]int, 0)
 	{
-
 		err := toolbox.RouteToService("get", "http://127.0.0.1:8082/v1/reverse/1,7,3", nil, &result)
 		if err != nil {
 			t.Errorf("Failed to send get request  %v", err)
 		}
 		assert.EqualValues(t, []int{3, 7, 1}, result)
+	}
 
+	{
+		err := toolbox.RouteToService("post", "http://127.0.0.1:8082/v1/reverse/", []int{1, 7, 3}, &result)
+		if err != nil {
+			t.Errorf("Failed to send get request  %v", err)
+		}
+		assert.EqualValues(t, []int{3, 7, 1}, result)
 	}
 
 }

@@ -1,0 +1,13 @@
+{
+  "DriverName": "bigquery",
+  "PoolSize": 1,
+  "MaxPoolSize": 8,
+  "Descriptor": "",
+  "Parameters": {
+    "serviceAccountId": "131848854731-tenvcbmneh5l9l9trupa9a5rrt5blrmm@developer.gserviceaccount.com",
+    "privateKeyPath": "/etc/sm/key.pem",
+    "projectId": "formal-cascade-571",
+    "datasetId": "MyDataset",
+    "dateFormat": "yyyy-MM-dd hh:mm:ss z"
+  }
+}
