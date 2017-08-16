@@ -877,8 +877,9 @@ func main() {
 1. Install ODBC manager http://www.odbcmanager.net/
 2. Install Vertica driver https://my.vertica.com/client_drivers/7.1.x/vertica-odbc-7.1.2-0.mac.pkg
 3. Change  set DriverManagerEncoding=UTF-16 in /Library/Vertica/ODBC/lib/vertica.ini 
-4. Install go driver go get github.com/alexbrainman/odbc
-5. Create/modify Vertica driver details /etc/odbcinst.ini   
+4. brew install unixODBC
+5. Install go driver go get github.com/alexbrainman/odbc
+6. Create/modify Vertica driver details /etc/odbcinst.ini   
 
 ```text
 [ODBC Drivers]
@@ -894,8 +895,8 @@ DriverManagerEncoding=UTF-16
 UsageCount=1
 ```
 
-6. Install Vertica driver odbcinst -i -d -f /etc/odbcinst.ini   
-7. Create dcc.Config configuration 
+7. Install Vertica driver odbcinst -i -d -f /etc/odbcinst.ini   
+8. Create dcc.Config configuration 
 
 ```text
 {
@@ -912,7 +913,7 @@ UsageCount=1
 
 ```
 
-8. Add vertica  import	_ "github.com/alexbrainman/odbc"
+9. Add vertica  import	_ "github.com/alexbrainman/odbc"
 
 
 
