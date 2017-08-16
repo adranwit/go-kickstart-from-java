@@ -912,6 +912,7 @@ UsageCount=1
 
 ```
 
+8. Add vertica  import	_ "github.com/alexbrainman/odbc"
 
 
 
